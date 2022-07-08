@@ -621,7 +621,6 @@ const cartSlice = createSlice({
       state.isLoading = true;
     },
     [getCartItems.fulfilled]: (state, action) => {
-      console.log(action);
       state.isLoading = false;
       state.cartItems = action.payload;
     },
